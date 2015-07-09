@@ -1,5 +1,5 @@
 suits = ("Diamonds", "Clubs", "Hearts", "Spades")
-values = ("Ace", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King")
+values = ("Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King")
 
 class Card:
 	"""
@@ -7,6 +7,7 @@ class Card:
 	@param(number) - the suit of the card
 	@param(number) - the value of the card
 	"""
-    def __init__(self, suit, value):
+    def __init__(self, suit, value, used=False):
         self.suit = suit;
         self.value = value
+        self.used = used;
