@@ -1,9 +1,14 @@
 from enum import Enum
 
 class Card:
+	"""
+	A class for holding the information of a single Card
+	@param(Suit) - the suit of the card
+	@param(Value) - the value of the card
+	"""
     def __init__(self, suit, value):
         self.suit = suit;
-        self.value = value;
+        self.value = value
 
 class Suit(Enum):
     DIAMONDS = 0
