@@ -9,3 +9,4 @@ class Deck:
 		for i in range(3):
 			for j in range(12):
 				cards.insert(Card(i, j))
+		self.cards = cards

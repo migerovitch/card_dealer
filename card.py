@@ -8,7 +8,13 @@ class Card:
 	@param(number) - the value of the card
 	@param(boolean) - whether or not the card has been used
 	"""
-    def __init__(self, suit, value, used=False):
-        self.suit = suit
-        self.value = value
-        self.used = used
+	def __init__(self, suit, value, used=False):
+		self.suit = suit
+		self.value = value
+		self.used = used
+
+	"""
+	Sets the used property of the Card to True
+	"""
+	def discard(self):
+		self.used = True
