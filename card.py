@@ -6,15 +6,15 @@ class Card:
 	A class for holding the information of a single Card
 	@param(number) - the suit of the card
 	@param(number) - the value of the card
-	@param(boolean) - whether or not the card has been used
+	@param(boolean) - whether or not the card has been discarded
 	"""
-	def __init__(self, suit, value, used=False):
+	def __init__(self, suit, value, discarded=False):
 		self.suit = suit
 		self.value = value
-		self.used = used
+		self.discarded = discarded
 
 	"""
-	Sets the used property of the Card to True
+	Sets the discarded property of the Card to True
 	"""
 	def discard(self):
-		self.used = True
+		self.discarded
