@@ -8,8 +8,8 @@ class Deck:
 	def __init__(self):
 		random.seed()
 		cards = []
-		for i in range(3):
-			for j in range(12):
+		for i in range(4):
+			for j in range(13):
 				cards.insert(Card(i, j))
 		self.cards = cards
 
